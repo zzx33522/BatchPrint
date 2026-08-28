@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B0000000000000000000201 /* BatchPrintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000100 /* BatchPrintApp.swift */; };
+		B0000000000000000000202 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000101 /* FileType.swift */; };
+		B0000000000000000000203 /* PrintFileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000102 /* PrintFileItem.swift */; };
+		B0000000000000000000204 /* PrintJobStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000103 /* PrintJobStatus.swift */; };
+		B0000000000000000000205 /* PrintPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000104 /* PrintPreset.swift */; };
+		B0000000000000000000206 /* ExternalDocumentPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000105 /* ExternalDocumentPrinter.swift */; };
+		B0000000000000000000207 /* FileAvailabilityChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000106 /* FileAvailabilityChecker.swift */; };
+		B0000000000000000000208 /* FolderScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000107 /* FolderScanner.swift */; };
+		B0000000000000000000209 /* PrintJobRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000108 /* PrintJobRunner.swift */; };
+		B000000000000000000020A /* PrintPresetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000109 /* PrintPresetStore.swift */; };
+		B000000000000000000020B /* PrinterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000010A /* PrinterService.swift */; };
+		B000000000000000000020C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000010B /* ContentView.swift */; };
+		B000000000000000000020D /* FileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000010C /* FileListView.swift */; };
+		B000000000000000000020E /* PrintSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000010D /* PrintSettingsView.swift */; };
+		B000000000000000000020F /* ProgressPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000010E /* ProgressPanel.swift */; };
+		B0000000000000000000210 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0000000000000000000110 /* AppKit.framework */; };
+		B0000000000000000000211 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0000000000000000000111 /* SwiftUI.framework */; };
+		B0000000000000000000212 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0000000000000000000112 /* PDFKit.framework */; };
+		B0000000000000000000213 /* UniformTypeIdentifiers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0000000000000000000113 /* UniformTypeIdentifiers.framework */; };
+		B0000000000000000000214 /* WordDocumentPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000000000000000000010F /* WordDocumentPrinter.swift */; };
+		B0000000000000000000215 /* OfficePDFConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0000000000000000000114 /* OfficePDFConverter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B0000000000000000000006 /* BatchPrint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatchPrint.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0000000000000000000100 /* BatchPrintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchPrintApp.swift; sourceTree = "<group>"; };
+		B0000000000000000000101 /* FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
+		B0000000000000000000102 /* PrintFileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintFileItem.swift; sourceTree = "<group>"; };
+		B0000000000000000000103 /* PrintJobStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintJobStatus.swift; sourceTree = "<group>"; };
+		B0000000000000000000104 /* PrintPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintPreset.swift; sourceTree = "<group>"; };
+		B0000000000000000000105 /* ExternalDocumentPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalDocumentPrinter.swift; sourceTree = "<group>"; };
+		B0000000000000000000106 /* FileAvailabilityChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileAvailabilityChecker.swift; sourceTree = "<group>"; };
+		B0000000000000000000107 /* FolderScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderScanner.swift; sourceTree = "<group>"; };
+		B0000000000000000000108 /* PrintJobRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintJobRunner.swift; sourceTree = "<group>"; };
+		B0000000000000000000109 /* PrintPresetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintPresetStore.swift; sourceTree = "<group>"; };
+		B000000000000000000010A /* PrinterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrinterService.swift; sourceTree = "<group>"; };
+		B000000000000000000010B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B000000000000000000010C /* FileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileListView.swift; sourceTree = "<group>"; };
+		B000000000000000000010D /* PrintSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintSettingsView.swift; sourceTree = "<group>"; };
+		B000000000000000000010E /* ProgressPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressPanel.swift; sourceTree = "<group>"; };
+		B000000000000000000010F /* WordDocumentPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDocumentPrinter.swift; sourceTree = "<group>"; };
+		B0000000000000000000110 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B0000000000000000000111 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B0000000000000000000112 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		B0000000000000000000113 /* UniformTypeIdentifiers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UniformTypeIdentifiers.framework; path = System/Library/Frameworks/UniformTypeIdentifiers.framework; sourceTree = SDKROOT; };
+		B0000000000000000000114 /* OfficePDFConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficePDFConverter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0000000000000000000008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0000000000000000000210 /* AppKit.framework in Frameworks */,
+				B0000000000000000000211 /* SwiftUI.framework in Frameworks */,
+				B0000000000000000000212 /* PDFKit.framework in Frameworks */,
+				B0000000000000000000213 /* UniformTypeIdentifiers.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000010 /* BatchPrint */,
+				B0000000000000000000004 /* Frameworks */,
+				B0000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000006 /* BatchPrint.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000110 /* AppKit.framework */,
+				B0000000000000000000111 /* SwiftUI.framework */,
+				B0000000000000000000112 /* PDFKit.framework */,
+				B0000000000000000000113 /* UniformTypeIdentifiers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000010 /* BatchPrint */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000100 /* BatchPrintApp.swift */,
+				B0000000000000000000011 /* Models */,
+				B0000000000000000000012 /* Services */,
+				B0000000000000000000013 /* Views */,
+			);
+			path = BatchPrint;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000011 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000101 /* FileType.swift */,
+				B0000000000000000000102 /* PrintFileItem.swift */,
+				B0000000000000000000103 /* PrintJobStatus.swift */,
+				B0000000000000000000104 /* PrintPreset.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000012 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B0000000000000000000105 /* ExternalDocumentPrinter.swift */,
+				B0000000000000000000106 /* FileAvailabilityChecker.swift */,
+				B0000000000000000000107 /* FolderScanner.swift */,
+				B0000000000000000000108 /* PrintJobRunner.swift */,
+				B0000000000000000000109 /* PrintPresetStore.swift */,
+				B000000000000000000010A /* PrinterService.swift */,
+				B000000000000000000010F /* WordDocumentPrinter.swift */,
+				B0000000000000000000114 /* OfficePDFConverter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B0000000000000000000013 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B000000000000000000010B /* ContentView.swift */,
+				B000000000000000000010C /* FileListView.swift */,
+				B000000000000000000010D /* PrintSettingsView.swift */,
+				B000000000000000000010E /* ProgressPanel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0000000000000000000005 /* BatchPrint */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B000000000000000000000B /* Build configuration list for PBXNativeTarget "BatchPrint" */;
+			buildPhases = (
+				B0000000000000000000007 /* Sources */,
+				B0000000000000000000008 /* Frameworks */,
+				B0000000000000000000009 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatchPrint;
+			packageProductDependencies = (
+			);
+			productName = BatchPrint;
+			productReference = B0000000000000000000006 /* BatchPrint.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					B0000000000000000000005 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = B000000000000000000000A /* Build configuration list for PBXProject "BatchPrint" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0000000000000000000002;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0000000000000000000005 /* BatchPrint */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0000000000000000000009 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0000000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0000000000000000000201 /* BatchPrintApp.swift in Sources */,
+				B0000000000000000000202 /* FileType.swift in Sources */,
+				B0000000000000000000203 /* PrintFileItem.swift in Sources */,
+				B0000000000000000000204 /* PrintJobStatus.swift in Sources */,
+				B0000000000000000000205 /* PrintPreset.swift in Sources */,
+				B0000000000000000000206 /* ExternalDocumentPrinter.swift in Sources */,
+				B0000000000000000000207 /* FileAvailabilityChecker.swift in Sources */,
+				B0000000000000000000208 /* FolderScanner.swift in Sources */,
+				B0000000000000000000209 /* PrintJobRunner.swift in Sources */,
+				B000000000000000000020A /* PrintPresetStore.swift in Sources */,
+				B000000000000000000020B /* PrinterService.swift in Sources */,
+				B000000000000000000020C /* ContentView.swift in Sources */,
+				B000000000000000000020D /* FileListView.swift in Sources */,
+				B000000000000000000020E /* PrintSettingsView.swift in Sources */,
+				B000000000000000000020F /* ProgressPanel.swift in Sources */,
+				B0000000000000000000214 /* WordDocumentPrinter.swift in Sources */,
+				B0000000000000000000215 /* OfficePDFConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B000000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B000000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		B000000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BatchPrint;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.BatchPrint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B000000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BatchPrint;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.local.BatchPrint;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B000000000000000000000A /* Build configuration list for PBXProject "BatchPrint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B000000000000000000000C /* Debug */,
+				B000000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B000000000000000000000B /* Build configuration list for PBXNativeTarget "BatchPrint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B000000000000000000000E /* Debug */,
+				B000000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0000000000000000000001 /* Project object */;
+}
